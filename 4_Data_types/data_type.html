@@ -7,6 +7,32 @@
     <title>Tipe Data Javascript</title>
   </head>
   <body>
+    <code>
+        <pre>
+            // string
+            const nama = "sugiono";
+    
+            // number
+            const umur = 40;
+    
+            // number
+            const rating = 8.4;
+    
+            // boolean
+            const sudahMenikah = true;
+    
+            // object
+            const x = null;
+    
+            // undefined
+            const y = undefined;
+    
+            const person = {
+            nama: "gerald",
+            umur: 25,
+            };
+        </pre>
+    </code>
     <script>
       // string
       const nama = "sugiono";
@@ -26,6 +52,9 @@
       // undefined
       const y = undefined;
 
+      // ?
+      const z = "undefined";
+
       const person = {
         nama: "gerald",
         umur: 25,
@@ -41,12 +70,16 @@
       // object
       console.log("x adalah " + typeof x);
       // undefined
-      console.log(typeof undefined);
+      console.log("y adalah " + typeof y);
+      // string
+      console.log("z adalah " + typeof z);
 
       // object
       console.log("person adalah " + typeof person);
       // string
       console.log("person.nama adalah " + typeof person.nama);
+      // number
+      console.log("person.umur adalah " + typeof person.umur);
     </script>
   </body>
 </html>

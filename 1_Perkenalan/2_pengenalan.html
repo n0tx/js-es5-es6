@@ -14,9 +14,9 @@
         
         function gantiKalimat() {
             if (isChange) {
-                document.getElementById("ubah").innerHTML = "Ini adalah kalimat yang baru! (true)";
+                document.getElementById("ubah").innerHTML = "Ini adalah kalimat yang baru! (" + isChange + ")";
             } else {
-                document.getElementById("ubah").innerHTML = "Ini adalah kalimat yang baru! (false)";
+                document.getElementById("ubah").innerHTML = "Ini adalah kalimat yang baru! (" + isChange + ")";
             }
             isChange = !isChange;
         }

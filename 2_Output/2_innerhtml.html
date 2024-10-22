@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>InnerHTML</title>
+  </head>
+  <body>
+    <!-- querySelector menggunakan class / dengan titik . -->
+    <p class="ubah1"></p>
+    <!-- querySelector menggunakan id / dengan tagar # -->
+    <p id="ubah2"></p>
+    <!-- Selector Class = . -->
+    <!-- Selector ID = # -->
+    <p id="ubah3"></p>
+    <script>
+      document.querySelector(".ubah1").innerHTML =
+        "Kalimat pertama, tanpa tag html";
+        // document.getElementById("ubah2").innerHTML =
+        // "<h1>Kalimat kedua, menggunakan tag h1 getElementById()</h1>";
+      document.querySelector("#ubah2").innerHTML =
+        "<h1>Kalimat kedua, menggunakan tag h1 querySelector()</h1>";
+      document.querySelector("#ubah3").innerHTML =
+        "jadi dia bisa inject string biasa dan tag html melalui javascript";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>InnerHTML</title>
+  </head>
+  <body>
+    <!-- querySelector dengan class / menggunakan titik "." -->
+    <p class="ubah1"></p>
+    <!-- querySelector dengan id / menggunakan tagar "#" -->
+    <p id="ubah2"></p>
+    <!-- Selector class = "." -->
+    <!-- Selector id = "#" -->
+    <p id="ubah3"></p>
+
+    <script>
+      document.querySelector(".ubah1").innerHTML =
+        "Raw text tanpa inject tag html";
+      document.querySelector("#ubah2").innerHTML =
+        "<h1>Text ini menggunakan tag header h1</h1>";
+      document.querySelector("#ubah3").innerHTML =
+        "bisa raw text dan custom raw text dengan inject tag html";
+    </script>
+  </body>
+</html>
